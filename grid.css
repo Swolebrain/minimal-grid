@@ -1,0 +1,14 @@
+.row > *{
+    box-sizing: border-box;
+}
+.row{
+    clear:both;
+}
+.cm6{
+    float:left;
+    width:50%;
+}
+.cs12{
+    float:left;
+    width:100%;
+}
