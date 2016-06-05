@@ -29,9 +29,11 @@
         <h1 class="hide-s">Only Desktop users are worthy.</h1>
         <script>
             function getContrastYIQ(hex){
-                if (hex.indexOf("#") == 0){
+                if (hex.indexOf("#") === 0){
                     hex = hex.substring(1);
                 }
+                if (hex.length != 6)
+                    return 'try this color format: #000000';
                 var r = parseInt(hex.substr(0,2),16);
                 var g = parseInt(hex.substr(2,2),16);
                 var b = parseInt(hex.substr(4,2),16);
